@@ -1,0 +1,72 @@
+.decode-text {
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+}
+
+.space {
+    display: inline-block;
+    width: 10px;
+}
+
+.text-animation {
+    display: inline-block;
+    position: relative;
+    color: transparent;
+    text-transform: uppercase;
+}
+
+.text-animation:before {
+    content: "";
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #FFF;
+    width: 0;
+    height: 1.2em;
+    -webkit-transform: translate(-50%, -55%);
+    -ms-transform: translate(-50%, -55%);
+    transform: translate(-50%, -55%);
+}
+
+.text-animation.state-1:before {
+    width: 1px;
+}
+
+.text-animation.state-2:before {
+    width: 0.9em;
+}
+
+.text-animation.state-3 {
+    color: white;
+}
+
+.text-animation.state-3:before {
+    width: 0;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    transition: 1s ease-in-out;
+}
+
+.top-left {
+    margin-left: 30px;
+    margin-bottom: 100px;
+    height: 100%;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+.top-right{
+    width: 300px;
+    height: 100%;
+}
+
+.top-card {
+    width: 300px;
+    height: 120px;
+    margin: 10px 0;
+}
