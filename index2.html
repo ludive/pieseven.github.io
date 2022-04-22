@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CG works collection.">
+    <title>PIESEVEN's WORKS</title>
+    <link rel="icon" type="image/png" href="imgs/favicon.ico">
+    <link rel="icon" type="image/png" sizes="16x16" href="imgs/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="imgs/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/apple-touch-icon.png">
+    <link rel="stylesheet" type="text/css" href="css/level_zero.css">
+    <link rel="stylesheet" type="text/css" href="css/level_one.css">
+    <link rel="stylesheet" type="text/css" href="css/level_two.css">
+    <link rel="stylesheet" type="text/css" href="css/slide_one.css">
+    <link rel="stylesheet" type="text/css" href="css/slide_two.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+</head>
+
+<body>
+    <div class="line">
+        <div class="linear1 linear-top"></div>
+        <div class="linear1 linear-bottom"></div>
+
+    </div>
+    <div class="bg">
+        <div class="bg-overlay"></div>
+        <video autoplay="autoplay" loop="loop" muted width="100%" src="imgs/bg.mp4"></video>
+    </div>
+    <div class="header">
+        <div class="logo">
+            PEISEVEN'<span>S</span> WORKS
+        </div><!-- LOGO -->
+        <div class="nav">
+            <div class="menu">
+                <div class="menu-item"><a href="/zh">ZH</a></div>|
+                <div class="menu-item"><span>EN</span></div>
+            </div>
+        </div>
+    </div>
+    <div class="cot">
+        <div class="cot-box">
+            <div class="cot-item"><a href="#top">HOME</a></div>
+            <div class="cot-item"><a href="#works">WORKS</a></div>
+            <div class="cot-item"><a href="#contact">CONTACT</a></div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="copy">
+            Copyright &copy; 2022 PIESEVEN.
+        </div>
+        <div class="license">
+            <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                Creative Commons BY-NC-SA 4.0 International License</a>.
+        </div>
+    </div>
+    <div class="swiper">
+        <div class="swiper-wrapper">
+            <div id="top" class="swiper-slide top">
+                <div class="top-left">
+                    <div class="top-card box-border">
+                        <div class="card-overlay">
+                            a1
+                        </div>
+                    </div>
+                    <div class="top-card box-border">
+                        <div class="card-overlay">
+                            a2
+                        </div>
+                    </div>
+                    <div class="top-card box-border">
+                        <div class="card-overlay">
+                            a3
+                        </div>
+                    </div>
+                </div>
+                <div class="top-center">
+                    <div style="margin: 0 auto;">
+                        <div class="decode-text">
+                            <div class="text-animation">W</div>
+                            <div class="text-animation">E</div>
+                            <div class="text-animation">L</div>
+                            <div class="text-animation">C</div>
+                            <div class="text-animation">O</div>
+                            <div class="text-animation">M</div>
+                            <div class="text-animation">E</div>
+                            <div class="text-animation">,</div>
+                            <div class="space"></div>
+                            <div class="text-animation">M</div>
+                            <div class="text-animation">Y</div>
+                            <div class="space"></div>
+                            <div class="text-animation">F</div>
+                            <div class="text-animation">R</div>
+                            <div class="text-animation">I</div>
+                            <div class="text-animation">E</div>
+                            <div class="text-animation">N</div>
+                            <div class="text-animation">D</div>
+                            <div class="space"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="top-right"></div>
+            </div>
+            <div id="works" class="swiper-slide works">
+                <div class="works-box">
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b1
+                        </div>
+                    </div>
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b2
+                        </div>
+                    </div>
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b3
+                        </div>
+                    </div>
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b4
+                        </div>
+                    </div>
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b5
+                        </div>
+                    </div>
+                    <div class="works-card box-border">
+                        <div class="card-overlay">
+                            b6
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide">Slide 3</div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper', {
+            direction: 'vertical',
+            slidesPerView: 1,
+            mousewheel: true,
+            keyboard: {
+                enabled: true,
+            },
+        });
+    </script>
+    <script>
+        /* ------------------------------------------------------------------------ *  
+        4 states per letter: Transparent | Line | Block | Visible.
+        These states are shuffled for a unique "decode" effect each time.
+        * ------------------------------------------------------------------------ */
+
+        function decodeText() {
+            var text = document.getElementsByClassName('decode-text')[0];
+            // debug with
+            // console.log(text, text.children.length);
+
+            // assign the placeholder array its places
+            var state = [];
+            for (var i = 0, j = text.children.length; i < j; i++) {
+                text.children[i].classList.remove('state-1', 'state-2', 'state-3');
+                state[i] = i;
+            }
+
+            // shuffle the array to get new sequences each time
+            var shuffled = shuffle(state);
+
+            for (var i = 0, j = shuffled.length; i < j; i++) {
+                var child = text.children[shuffled[i]];
+                classes = child.classList;
+
+                // fire the first one at random times
+                var state1Time = Math.round(Math.random() * (2000 - 300)) + 50;
+                if (classes.contains('text-animation')) {
+                    setTimeout(firstStages.bind(null, child), state1Time);
+                }
+            }
+        }
+
+        // send the node for later .state changes
+        function firstStages(child) {
+            if (child.classList.contains('state-2')) {
+                child.classList.add('state-3');
+            } else if (child.classList.contains('state-1')) {
+                child.classList.add('state-2')
+            } else if (!child.classList.contains('state-1')) {
+                child.classList.add('state-1');
+                setTimeout(secondStages.bind(null, child), 100);
+            }
+        }
+
+        function secondStages(child) {
+            if (child.classList.contains('state-1')) {
+                child.classList.add('state-2')
+                setTimeout(thirdStages.bind(null, child), 100);
+            }
+            else if (!child.classList.contains('state-1')) {
+                child.classList.add('state-1')
+            }
+        }
+
+        function thirdStages(child) {
+            if (child.classList.contains('state-2')) {
+                child.classList.add('state-3')
+            }
+        }
+
+        function shuffle(array) {
+            var currentIndex = array.length, temporaryValue, randomIndex;
+
+            // While there remain elements to shuffle...
+            while (0 !== currentIndex) {
+                // Pick a remaining element...
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex -= 1;
+
+                // And swap it with the current element.
+                temporaryValue = array[currentIndex];
+                array[currentIndex] = array[randomIndex];
+                array[randomIndex] = temporaryValue;
+            }
+            return array;
+        }
+
+        // Demo only stuff
+        decodeText();
+
+        // beware: refresh button can overlap this timer and cause state mixups
+        setInterval(function () { decodeText(); }, 5000);
+
+    </script>
+</body>
+
+</html>
