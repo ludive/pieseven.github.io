@@ -1,0 +1,12 @@
+.contact{
+    color: #FFF;
+}
+.contact-box{
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+}
+.contact-card{
+    width: 50vw;
+    height: 50vh;
+}

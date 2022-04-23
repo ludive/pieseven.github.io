@@ -1,0 +1,36 @@
+.card-icon-box {
+    display: flex;
+    width: fit-content;
+    padding: 15px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.card-icon {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+}
+
+.card-blender {
+    background-image: url("../imgs/icons/blender.svg");
+}
+.card-au {
+    background-image: url("../imgs/icons/adobeaudition.svg");
+}
+.card-pr {
+    background-image: url("../imgs/icons/adobepremierepro.svg");
+}
+.card-ai {
+    background-image: url("../imgs/icons/adobeillustrator.svg");
+}
+.card-aff {
+    background-image: url("../imgs/icons/affinity.svg");
+}
+.card-afd {
+    background-image: url("../imgs/icons/affinitydesigner.svg");
+}
+.card-afp {
+    background-image: url("../imgs/icons/affinityphoto.svg");
+}
