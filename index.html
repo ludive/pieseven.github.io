@@ -16,6 +16,10 @@
     <link rel="stylesheet" type="text/css" href="css/level_two.css">
     <link rel="stylesheet" type="text/css" href="css/slide_one.css">
     <link rel="stylesheet" type="text/css" href="css/slide_two.css">
+    <link rel="stylesheet" type="text/css" href="css/slide_three.css">
+    <link rel="stylesheet" type="text/css" href="css/slide_four.css">
+    <link rel="stylesheet" type="text/css" href="css/card_icon.css">
+    <link rel="stylesheet" type="text/css" href="css/cross_platform.css">
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
 </head>
@@ -37,15 +41,23 @@
         <div class="nav">
             <div class="menu">
                 <div class="menu-item"><a href="/zh">ZH</a></div>|
-                <div class="menu-item"><span>EN</span></div>
+                <div class="menu-item"><span>EN</span></div>|
+                <div class="menu-item"><span>RU</span></div>|
+                <div class="menu-item"><span>JP</span></div>|
+                <div class="menu-item"><span>FR</span></div>
             </div>
         </div>
     </div>
     <div class="cot">
-        <div class="cot-box">
-            <div class="cot-item"><a href="#top">HOME</a></div>
-            <div class="cot-item"><a href="#works">WORKS</a></div>
-            <div class="cot-item"><a href="#contact">CONTACT</a></div>
+        <div class="cot-container">
+            <div class="cot-line"></div>
+            <div class="cot-box">
+                <div class="cot-item"><a href="#top">HOME</a></div>
+                <div class="cot-item"><a href="#images">IMAGES</a></div>
+                <div class="cot-item"><a href="#videos">VIDEOS</a></div>
+                <div class="cot-item"><a href="#contact">CONTACT</a></div>
+            </div>
+            <div class="cot-line"></div>
         </div>
     </div>
     <div class="footer">
@@ -60,25 +72,9 @@
     <div class="swiper">
         <div class="swiper-wrapper">
             <div id="top" class="swiper-slide top">
-                <div class="top-left">
-                    <div class="top-card box-border">
-                        <div class="card-overlay">
-                            a1
-                        </div>
-                    </div>
-                    <div class="top-card box-border">
-                        <div class="card-overlay">
-                            a2
-                        </div>
-                    </div>
-                    <div class="top-card box-border">
-                        <div class="card-overlay">
-                            a3
-                        </div>
-                    </div>
-                </div>
-                <div class="top-center">
+                <div class="top-box">
                     <div style="margin: 0 auto;">
+                        <div class="top-text">LET'<span>S</span> MAKE THE FUTURE COMES TRUE!</div>
                         <div class="decode-text">
                             <div class="text-animation">W</div>
                             <div class="text-animation">E</div>
@@ -102,54 +98,214 @@
                         </div>
                     </div>
                 </div>
-                <div class="top-right"></div>
             </div>
-            <div id="works" class="swiper-slide works">
-                <div class="works-box">
-                    <div class="works-card box-border">
+            <div id="images" class="swiper-slide images">
+                <div class="images-box">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b1
+                            a1
                         </div>
                     </div>
-                    <div class="works-card box-border">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b2
+                            a2
                         </div>
                     </div>
-                    <div class="works-card box-border">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b3
+                            a3
                         </div>
                     </div>
-                    <div class="works-card box-border">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b4
+                            a4
                         </div>
                     </div>
-                    <div class="works-card box-border">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b5
+                            a5
                         </div>
                     </div>
-                    <div class="works-card box-border">
+                    <div class="images-card box-border">
                         <div class="card-overlay">
-                            b6
+                            a6
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a7
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a8
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a9
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a10
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a11
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a12
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a13
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a14
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a15
+                        </div>
+                    </div>
+                    <div class="images-card box-border">
+                        <div class="card-overlay">
+                            a16
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="swiper-slide">Slide 3</div>
+            <div id="videos" class="swiper-slide videos">
+                <div class="videos-box">
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-au"></div>
+                                <div class="card-icon card-pr"></div>
+                                <div class="card-icon card-ai"></div>
+                                <div class="card-icon card-aff"></div>
+                                <div class="card-icon card-afd"></div>
+                                <div class="card-icon card-afp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-au"></div>
+                                <div class="card-icon card-pr"></div>
+                                <div class="card-icon card-afd"></div>
+                                <div class="card-icon card-afp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-au"></div>
+                                <div class="card-icon card-pr"></div>
+                                <div class="card-icon card-ai"></div>
+                                <div class="card-icon card-aff"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-ai"></div>
+                                <div class="card-icon card-aff"></div>
+                                <div class="card-icon card-afd"></div>
+                                <div class="card-icon card-afp"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-au"></div>
+                                <div class="card-icon card-pr"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="videos-card box-border">
+                        <div class="card-overlay">
+                            <div class="videos-play"></div>
+                            <div class="card-icon-box">
+                                <div class="card-icon card-blender"></div>
+                                <div class="card-icon card-au"></div>
+                                <div class="card-icon card-afp"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="contact" class="swiper-slide contact">
+                <div class="contact-box">
+                    <div class="contact-card box-border">
+                        <div class="card-overlay">
+                            CONTACT
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-mobile">
+                <div class="menu">
+                    <div class="menu-box">
+                        <div class="menu-item"><a href="/zh">ZH</a></div>|
+                        <div class="menu-item"><span>EN</span></div>|
+                        <div class="menu-item"><span>RU</span></div>|
+                        <div class="menu-item"><span>JP</span></div>|
+                        <div class="menu-item"><span>FR</span></div>
+                    </div>
+                </div>
+                <div class="copy">
+                    Copyright &copy; 2022 PIESEVEN.
+                </div>
+                <div class="license">
+                    <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">
+                        CC BY-NC-SA 4.0 International License</a>.
+                </div>
+            </div>
         </div>
     </div>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper('.swiper', {
-            direction: 'vertical',
-            slidesPerView: 1,
-            mousewheel: true,
-            keyboard: {
-                enabled: true,
-            },
+        window.onload = function () {
+            if (document.body.clientHeight < 850) {
+                console.log(document.body.clientHeight + "px");
+            } else {
+                var swiper = new Swiper('.swiper', {
+                    direction: 'vertical',
+                    slidesPerView: 1,
+                    mousewheel: true,
+                    keyboard: {
+                        enabled: true,
+                    },
+                });
+            }
+        }
+    </script>
+    <script>
+        $(window).resize(function (e) {
+            setTimeout("window.location.reload(true)", 500);
         });
     </script>
     <script>
