@@ -280,23 +280,6 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <script>
-        window.onload = function () {
-            if (document.body.clientHeight < 850) {
-                console.log(document.body.clientHeight + "px");
-            } else {
-                var swiper = new Swiper('.swiper', {
-                    direction: 'vertical',
-                    slidesPerView: 1,
-                    mousewheel: true,
-                    keyboard: {
-                        enabled: true,
-                    },
-                });
-            }
-        }
-    </script>
     <script>
         $(window).resize(function (e) {
             setTimeout("window.location.reload(true)", 500);
