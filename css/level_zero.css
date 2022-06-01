@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Share+Tech+Mono);
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300&display=swap');
 
 * {
     cursor: crosshair;
     font-weight: 700;
-    font-family: "source han sans","Share Tech Mono", monospace;
+    font-family: 'Noto Sans SC', sans-serif,"Share Tech Mono";
     scrollbar-width: none;
     -ms-overflow-style: none;
     overflow-x: none;
