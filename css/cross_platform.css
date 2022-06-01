@@ -76,4 +76,7 @@
         height: auto;
         width: auto;
     }
+    .videos{
+        display: none;
+    }
 }
