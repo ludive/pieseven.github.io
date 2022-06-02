@@ -39,6 +39,12 @@
     margin: 6px;
     padding: 3px;
 }
+.images-card1 {
+    width: calc((100vw - 144px)/2);
+    height: 900px;
+    margin: 6px;
+    padding: 3px;
+}
 .a11{
     background: url(../imgs/works/blender/jian.jpg) no-repeat;
     background-position: center;
@@ -187,8 +193,8 @@
 
 .a51{
     background: url(../imgs/works/maya/1.jpg) no-repeat;
-    background-position: top;
-    background-size: cover;
+    background-position: center;
+    background-size: contain;
 }
 .a52{
     background: url(../imgs/works/maya/wad.jpg) no-repeat;
@@ -198,11 +204,12 @@
 .a53{
     background: url(../imgs/works/maya/02.jpg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
+    background-color: #aca7a4;
 }
 .a54{
     background: url(../imgs/works/maya/arnold.jpg) no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: cover;
 }
 
@@ -219,10 +226,20 @@
 .a57{
     background: url(../imgs/works/maya/Snipaste_2020-11-09_12-15-56.jpg) no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: contain;
 }
 .a58{
     background: url(../imgs/works/maya/xx.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.a59{
+    background: url(../imgs/works/maya/jixx.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.a510{
+    background: url(../imgs/works/maya/jixie333.jpg) no-repeat;
     background-position: center;
     background-size: cover;
 }

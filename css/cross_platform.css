@@ -69,7 +69,7 @@
     .license{
         font-size: 13px;
     }
-    .images-card,.videos-card{
+    .images-card1,.images-card,.videos-card{
         width: calc(100vw - 60px);
     }
     .swiper-wrapper{
@@ -78,5 +78,13 @@
     }
     .videos{
         display: none;
+    }
+    .contact-box{
+        height: 50vh;
+        display: flex;
+    }
+    .contact-card{
+        height: 50vh;
+        background-color: #0000;
     }
 }
