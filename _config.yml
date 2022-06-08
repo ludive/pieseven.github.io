@@ -1,0 +1,17 @@
+lang: zh
+url: "https://pieseven-works.github.io"
+
+collections_dir: posts
+collections:
+  en:
+    output: true
+    permalink: /post/:title
+  zh:
+    output: true
+    permalink: /zh/post/:title
+
+markdown: kramdown
+
+sass:
+  sass_dir: _sass
+  style: compressed

@@ -1,0 +1,15 @@
+// Fonts
+@font-face {
+    font-family: 'Melete Bold';
+    src: url('/assets/fonts/Melete-Bold.otf') format('woff2'), url('/assets/ttf/Melete-Bold.otf') format("woff");
+}
+
+@font-face {
+    font-family: 'Basically A Sans Serif SemiBold';
+    src: url('/assets/fonts/BasicallyASansSerif-SemiBold.otf') format('woff2'), url('/assets/ttf/BasicallyASansSerif-SemiBold.otf') format("woff");
+}
+
+$melete:  "Melete Bold";
+$bass:    "Basically A Sans Serif SemiBold";
+
+$fira:     "monospace";

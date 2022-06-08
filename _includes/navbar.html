@@ -1,0 +1,16 @@
+{% include tools/getSiteLang.html %}
+<nav class="navbar">
+    <div class="navbar-box">
+        <div class="navbar-box-lang">i18n</div>
+        <div class="navbar-box-title">
+            {{ site.data.i18n.[_lang].title }}
+        </div>
+        <div class="navbar-box-menu">
+            <div class="navbar-box-menu-items">
+                <div class="navbar-box-menu-item">HOME</div>
+                <div class="navbar-box-menu-item">WORKS</div>
+                <div class="navbar-box-menu-item">ABOUT</div>
+            </div>
+        </div>
+    </div>
+</nav>

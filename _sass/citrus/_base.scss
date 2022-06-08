@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: $white;
+}
+
+a {
+    text-decoration: none;
+}
+
+.thumb{
+    margin: 10px;
+  }
+
+  .thumbbox{
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+  }
