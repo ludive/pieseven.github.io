@@ -7,6 +7,8 @@ en:
   home: "HOME"
   works: "WORKS"
   about: "ABOUT"
+  industry: "Industry Module"
+  nextgen: "Next-gen Module"
 
 zh:
   name: "ENG"
@@ -17,3 +19,5 @@ zh:
   home: "首页"
   works: "作品"
   about: "关于"
+  industry: "工业建模"
+  nextgen: "次世代建模"

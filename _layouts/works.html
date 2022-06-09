@@ -8,9 +8,71 @@ layout: default
     {% if _cate == 'maya' %}
     {% for image in site.imgs_maya reversed %}
     <div class="thumb"
-      style="width: 250px;height:250px;display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
-      <a style="width: 250px;height:250px"
-        href="/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'blender' %}
+    {% for image in site.imgs_blender reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_blender/{{  image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_blender/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'keyshot' %}
+    {% for image in site.imgs_keyshot reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_keyshot/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_keyshot/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'ue4' %}
+    {% for image in site.imgs_ue4 reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_ue4/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_ue4/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'c4d' %}
+    {% for image in site.imgs_c4d reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_c4d/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_c4d/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'zbrush' %}
+    {% for image in site.imgs_zbrush reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_zbrush/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_zbrush/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'industry' %}
+    {% for image in site.imgs_industry reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_industry/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_industry/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
+    {% if _cate == 'next-gen' %}
+    {% for image in site.imgs_next_gen reversed %}
+    <div class="thumb"
+      style="display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_next_gen/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a href="/assets/works/imgs_next_gen/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
         data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
     </div>
     {% endfor %}

@@ -1,7 +1,12 @@
 <script>
     window.onload = function () {
         initial();
+        if (document.readyState === 'complete') {
+            document.getElementById("preloading").style.display = "none";
+        }
+
     }
+
 </script>
 
 <script src="/assets/js/photoswipe.esm.min.js"></script>
