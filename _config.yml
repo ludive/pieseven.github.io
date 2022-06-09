@@ -1,14 +1,24 @@
 lang: zh
 url: "https://pieseven-works.github.io"
 
-collections_dir: posts
+# collections_dir: posts
+# collections:
+#   en:
+#     output: true
+#     permalink: /post/:title
+#   zh:
+#     output: true
+#     permalink: /zh/post/:title
+
 collections:
-  en:
+  imgs_maya:
     output: true
-    permalink: /post/:title
-  zh:
+  blogs_en:
     output: true
-    permalink: /zh/post/:title
+    permalink: /blogs/:title
+  blogs_zh:
+    output: true
+    permalink: /zh/blogs/:title
 
 markdown: kramdown
 

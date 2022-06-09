@@ -2,10 +2,49 @@
 layout: default
 ---
 
-<div>
-    <div>
-        <a href="/zh/">中文</a>
-        <a href="/">English</a>
+<div class="bg">
+    <div class="bg-overlay"></div>
+    <video autoplay="autoplay" loop="loop" muted width="100%" src="/assets/imgs/bg.mp4"></video>
+</div>
+<div class="top-box">
+    <div style="margin: auto;">
+        {% if page.lang == 'en' %}
+        <div class="decode-text">
+            <div class="text-animation">W</div>
+            <div class="text-animation">E</div>
+            <div class="text-animation">L</div>
+            <div class="text-animation">C</div>
+            <div class="text-animation">O</div>
+            <div class="text-animation">M</div>
+            <div class="text-animation">E</div>
+            <div class="text-animation">,</div>
+            <div class="space"></div>
+            <div class="text-animation">M</div>
+            <div class="text-animation">Y</div>
+            <div class="space"></div>
+            <div class="text-animation">F</div>
+            <div class="text-animation">R</div>
+            <div class="text-animation">I</div>
+            <div class="text-animation">E</div>
+            <div class="text-animation">N</div>
+            <div class="text-animation">D</div>
+        </div>
+        {% else %}
+        <div class="decode-text">
+            <div class="text-animation">欢</div>
+            <div class="text-animation">迎</div>
+            <div class="text-animation">来</div>
+            <div class="text-animation">到</div>
+            <div class="text-animation">我</div>
+            <div class="text-animation">的</div>
+            <div class="text-animation">个</div>
+            <div class="text-animation">人</div>
+            <div class="text-animation">C</div>
+            <div class="text-animation">G</div>
+            <div class="text-animation">作</div>
+            <div class="text-animation">品</div>
+            <div class="text-animation">站</div>
+        </div>
+        {% endif %}
     </div>
-    <a href="/works">作品集</a>
 </div>

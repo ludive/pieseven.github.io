@@ -1,5 +1,19 @@
 en:
+  name: "中文"
+  name_url: "/zh/"
+  switch: "/"
   title: "PIESEVEN's WORKS"
+  license: "All works are distributed under the CC BY-NC-SA 4.0 license."
+  home: "HOME"
+  works: "WORKS"
+  about: "ABOUT"
 
 zh:
+  name: "ENG"
+  name_url: "/"
+  switch: "/zh/"
   title: "PIESEVEN的作品集"
+  license: "本站所有作品均在CC BY-NC-SA 4.0协议下分发."
+  home: "首页"
+  works: "作品"
+  about: "关于"

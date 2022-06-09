@@ -1,15 +1,22 @@
 {% include tools/getSiteLang.html %}
 <nav class="navbar">
     <div class="navbar-box">
-        <div class="navbar-box-lang">i18n</div>
         <div class="navbar-box-title">
             {{ site.data.i18n.[_lang].title }}
         </div>
         <div class="navbar-box-menu">
             <div class="navbar-box-menu-items">
-                <div class="navbar-box-menu-item">HOME</div>
-                <div class="navbar-box-menu-item">WORKS</div>
-                <div class="navbar-box-menu-item">ABOUT</div>
+                <a href="{{ site.data.i18n.[_lang].switch }}">
+                    <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].home }}</div>
+                </a><a href="{{ site.data.i18n.[_lang].switch }}works">
+                    <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].works }}</div>
+                </a>
+                <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].about }}</div>
+                <a href="{{ page.switch }}">
+                    <div class="navbar-box-menu-item">
+                        {{ site.data.i18n.[_lang].name }}
+                    </div>
+                </a>
             </div>
         </div>
     </div>

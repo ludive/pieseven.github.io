@@ -2,12 +2,18 @@
 layout: default
 ---
 
-<div class="thumbbox">
-  {% for image in (8..10) %}
-  <div class="thumb" style="width: 200px;height:200px;display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_maya/0{{ image }}_thumb.jpg);">
-    <a style="width: 200px;height:200px" href="/assets/works/imgs_maya/0{{ image }}.jpg" data-pswp-width="2048" data-pswp-height="2048" target="_blank">
-      
-    </a>
+{% include tools/getImgsCate.html %}
+<div class="thumbcontainer">
+  <div class="thumbbox">
+    {% if _cate == 'maya' %}
+    {% for image in site.imgs_maya reversed %}
+    <div class="thumb"
+      style="width: 250px;height:250px;display: flex;background-position: center;background-repeat: no-repeat;background-size: cover;background-image: url(/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}_thumb.jpg);">
+      <a style="width: 250px;height:250px"
+        href="/assets/works/imgs_maya/{{ image.path | split: '/' | last | split: '.' | first }}.jpg"
+        data-pswp-width="{{ image.width }}" data-pswp-height="{{ image.height }}" target="_blank"></a>
+    </div>
+    {% endfor %}
+    {% endif %}
   </div>
-  {% endfor %}
 </div>
