@@ -2,19 +2,23 @@
 <nav class="navbar">
     <div class="navbar-box">
         <div class="navbar-box-title">
-            {{ site.data.i18n.[_lang].title }}
+            <a href="{{ site.data.i18n[_lang].switch }}">
+                #{{ site.data.i18n[_lang].title }}
+            </a>
         </div>
         <div class="navbar-box-menu">
             <div class="navbar-box-menu-items">
-                <a href="{{ site.data.i18n.[_lang].switch }}">
-                    <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].home }}</div>
-                </a><a href="{{ site.data.i18n.[_lang].switch }}works">
-                    <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].works }}</div>
+                <a href="{{ site.data.i18n[_lang].switch }}">
+                    <div class="navbar-box-menu-item">\ {{ site.data.i18n[_lang].home }}</div>
+                </a><a href="{{ site.data.i18n[_lang].switch }}works">
+                    <div class="navbar-box-menu-item">\ {{ site.data.i18n[_lang].works }}</div>
+                </a><a href="{{ site.data.i18n[_lang].switch }}videos">
+                    <div class="navbar-box-menu-item videos">\ {{ site.data.i18n[_lang].videos }}</div>
                 </a>
-                <div class="navbar-box-menu-item">{{ site.data.i18n.[_lang].about }}</div>
+                <div class="navbar-box-menu-item">\ {{ site.data.i18n[_lang].about }}</div>
                 <a href="{{ page.switch }}">
                     <div class="navbar-box-menu-item">
-                        {{ site.data.i18n.[_lang].name }}
+                        \ {{ site.data.i18n[_lang].name }}
                     </div>
                 </a>
             </div>
