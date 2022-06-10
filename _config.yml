@@ -1,14 +1,5 @@
-lang: zh
+lang: en
 url: "https://pieseven-works.github.io"
-
-# collections_dir: posts
-# collections:
-#   en:
-#     output: true
-#     permalink: /post/:title
-#   zh:
-#     output: true
-#     permalink: /zh/post/:title
 
 collections:
   imgs_maya:
@@ -21,18 +12,14 @@ collections:
     output: true
   imgs_industry:
     output: true
+  imgs_industry_w:
+    output: true
   imgs_keyshot:
     output: true
   imgs_ue4:
     output: true
   imgs_zbrush:
     output: true
-  blogs_en:
-    output: true
-    permalink: /blogs/:title
-  blogs_zh:
-    output: true
-    permalink: /zh/blogs/:title
 
 markdown: kramdown
 

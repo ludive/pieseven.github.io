@@ -26,10 +26,15 @@ a {
     margin: 5px;
     width: calc((100vw - 120px) / 8);
     height: calc((100vw - 120px) / 8);
+    display: flex;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 
-    &>a {
+    &>img {
         width: calc((100vw - 120px) / 8);
         height: calc((100vw - 120px) / 8);
+        border: 0;
     }
 }
 
@@ -38,37 +43,40 @@ a {
         margin: 5px;
         width: calc((100vw - 100px) / 6);
         height: calc((100vw - 100px) / 6);
-    
-        &>a {
+
+        &>img {
             width: calc((100vw - 100px) / 6);
             height: calc((100vw - 100px) / 6);
         }
     }
 }
+
 @media (max-width:900px) {
     .thumb {
         margin: 5px;
         width: calc((100vw - 80px) / 4);
         height: calc((100vw - 80px) / 4);
-    
-        &>a {
+
+        &>img {
             width: calc((100vw - 80px) / 4);
             height: calc((100vw - 80px) / 4);
         }
     }
 }
+
 @media (max-width:500px) {
     .thumb {
         margin: 5px;
         width: calc((100vw - 60px) / 2);
         height: calc((100vw - 60px) / 2);
-    
-        &>a {
+
+        &>img {
             width: calc((100vw - 60px) / 2);
             height: calc((100vw - 60px) / 2);
         }
     }
 }
+
 .thumbbox {
     display: flex;
     flex-wrap: wrap;
@@ -79,7 +87,7 @@ a {
 .thumbcontainer {
     display: flex;
     width: 100vw;
-    margin: 70px 0;
+    margin: 90px 0;
 }
 
 .preloading {
@@ -89,12 +97,12 @@ a {
     position: fixed;
     z-index: 9;
     display: flex;
-    -webkit-transition: all 1.5s;
-    -moz-transition: all 1.5s;
-    -ms-transition: all 1.5s;
-    -o-transition: all 1.5s;
-    transition: all 1.5s;
-    opacity: 0;
+    -webkit-transition: all 1.5s linear;
+    -moz-transition: all 1.5s linear;
+    -ms-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
+    transition: all 1.5s linear;
+    opacity: 100;
 
     &-icon {
         margin: auto;
@@ -108,15 +116,37 @@ a {
     }
 }
 
+.preloading-fadout {
+    -webkit-transition: all 1.5s linear;
+    -moz-transition: all 1.5s linear;
+    -ms-transition: all 1.5s linear;
+    -o-transition: all 1.5s linear;
+    transition: all 1.5s linear;
+    opacity: 0;
+    display: none;
+}
+
 .bg {
     position: fixed;
-    left: 0;
-    top: 0;
-    bottom: 0;
+    align-items: center;
+    justify-content: center;
     z-index: 0;
     object-fit: fill;
     width: 100vw;
     height: 100vh;
+
+    video {
+        width: 100vw;
+    }
+}
+
+@media (max-width:1600px) {
+    .bg {
+        video {
+            width: auto;
+            height: 100vh;
+        }
+    }
 }
 
 .bg-overlay {
@@ -187,10 +217,53 @@ a {
         background-size: cover;
         box-shadow: #000 1px 1px 5px;
         display: flex;
-        &-name{
+
+        &-name {
             margin: auto;
             font-size: 1.5em;
             font-weight: 700;
+        }
+    }
+}
+
+@media (max-width:1100px) {
+    .worklist {
+        height: auto;
+
+        &-box {
+            margin: 60px 40px;
+        }
+
+        &-item {
+            width: calc((100vw - 140px)/3);
+        }
+    }
+}
+
+@media (max-width:700px) {
+    .worklist {
+        height: auto;
+
+        &-box {
+            margin: 70px 40px;
+        }
+
+        &-item {
+            width: calc((100vw - 120px)/2);
+        }
+    }
+}
+
+@media (max-width:500px) {
+    .worklist {
+        height: auto;
+
+        &-box {
+            margin: 80px 40px;
+        }
+
+        &-item {
+            width: calc((100vw - 100px));
         }
     }
 }
